@@ -25,8 +25,8 @@ function addMoreItems() {
 // ---- Infinite Scroll Logic ----
 list.addEventListener("scroll", function () {
   // Check if user reached the bottom
-  if (list.scrollTop + list.clientHeight >= list.scrollHeight-5) {
-    addMoreItems();            // yaha -5 isliye kiye kyuki scrollHeight bara ho raha tha and function call nhi pa rha tha
+  if (list.scrollTop + list.clientHeight >= list.scrollHeight-1) {
+    addMoreItems();            // yaha -1 isliye kiye kyuki scrollHeight bara ho raha tha and function call nhi pa rha tha
   }
 });
 
